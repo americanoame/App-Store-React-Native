@@ -1,12 +1,22 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text, TextInput } from 'react-native';
+import React from 'react';
+import { defaultStyle } from '../styles/styles';
+import Header from '../components/Header';
 
 const Home = () => {
   return (
-    <View>
-      <Text>Home</Text>
-    </View>
-  )
-}
+    <View style={defaultStyle}>
 
-export default Home
+      <Header />
+      <View>
+        <Text style={{ fontSize: 25 }}>BellLOut</Text>
+        <Text style={{ fontSize: 25, fontWeight: '900' }}>Our Product</Text>
+
+      </View>
+
+
+    </View>
+  );
+};
+
+export default Home;
