@@ -30,9 +30,9 @@ const Header = ({ back, emptyCart = false }) => {
                                 backgroundColor: colors.color5
                             }}
 
-                            icon={'bell'}
+                            icon={emptyCart ? 'delete-outline' : 'cart-outline'}
                             color={
-                                route.name === 'productDetails' ? colors.color3 : colors.color3 
+                                route.name === 'productDetails' ? colors.color3 : colors.color3
                             }
 
                         />
